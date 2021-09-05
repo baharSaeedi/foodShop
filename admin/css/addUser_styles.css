@@ -1,0 +1,43 @@
+@import "fonts.css";
+
+/********************** General CSS *******************/
+* , *::before , *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    direction: rtl;
+    list-style-type:none;
+}
+body{
+    font-family: IRANSans;
+}
+html {
+    scroll-behavior: smooth;
+}
+a , a:hover {
+    text-decoration: none;
+}
+
+/********************** Form *******************/
+.my-bg-dark
+{
+    background-color: #1D1A1A;
+}
+.was-validated .form-control:valid, .form-control.is-valid , .was-validated .form-control:invalid, .form-control.is-invalid{
+    padding-left: calc(1.5em + 0.75rem);
+    padding-right: calc(0.2em + 0.75rem);
+    background-position: left calc(0.375em + 0.1875rem) center;
+}
+.img-fluid{
+    width: 110px;
+}
+hr{
+    width: 40%;
+    border-top: 3px dashed rgba(0, 0, 0, 0.5);
+}
+.card{
+    text-align: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,139 @@
+@import "fonts.css";
+
+/********************** General CSS *******************/
+* , *::before , *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    direction: rtl;
+    list-style-type:none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: IRANSans;
+}
+a , a:hover {
+    text-decoration: none;
+}
+
+/********************** Navigation *******************/
+.my-bg-dark
+{
+    background-color: #1D1A1A;
+}
+nav .img-fluid{
+    width: 80px;
+}
+nav .logOutLink {
+    color: #aaa;
+    transition: 500ms;
+}
+nav .logOutLink:hover{
+    color: #ffffff;
+}
+.leftNavSection a{
+    color: #333;
+    text-decoration: none;
+    transition: 500ms;
+}
+.leftNavSection a:hover{
+    color: #ffffff;
+}
+
+/********************** Index Content *******************/
+.mainContent{
+    min-height: 90vh;
+    background-color: #323232;
+}
+hr{
+    width: 40%;
+    border-top: 4px dotted rgba(0, 0, 0, 0.5);
+}
+.box{
+    background-color: #c16605;
+    border-radius: 10px;
+    transition: 500ms;
+}
+.box:hover{
+    background-color: #FFBF2D;
+}
+.numbers{
+    font-size: 45px;
+    color: #333;
+}
+.numbersText{
+    color: #222;
+}
+
+/********************** Users Content *******************/
+.userContent{
+    min-height: 90vh;
+    background-color: #323232;
+}
+.msg{
+    font-size:1.5rem;
+}
+.userTable{
+    background-color: #898383;
+    border-radius: 10px;
+}
+.table th, .table td{
+    border: none;
+}
+
+/********************** Orders Content *******************/
+.orderContent{
+    min-height: 90vh;
+    background-color: #323232;
+}
+.msg{
+    font-size:1.5rem;
+}
+.orderTable{
+    background-color: #898383;
+    border-radius: 10px;
+}
+.table th, .table td{
+    border: none;
+}
+
+/********************** Images Content *******************/
+.imageContent{
+    min-height: 90vh;
+    background-color: #323232;
+}
+.msg{
+    font-size:1.5rem;
+}
+.imageTable{
+    background-color: #898383;
+    border-radius: 10px;
+}
+.table th, .table td{
+    border: none;
+}
+.imageTable .img-fluid{
+    width: 50px;
+}
+
+/********************** Categories Content *******************/
+.catContent{
+    min-height: 90vh;
+    background-color: #323232;
+}
+.msg{
+    font-size:1.5rem;
+}
+.catTable{
+    background-color: #898383;
+    border-radius: 10px;
+}
+.table th, .table td{
+    border: none;
+}
+
+

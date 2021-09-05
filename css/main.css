@@ -1,0 +1,335 @@
+@import "fonts.css";
+
+/********************** General CSS *******************/
+* , *::before , *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    direction: rtl;
+    list-style-type:none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: IRANSans;
+}
+a , a:hover {
+    text-decoration: none;
+}
+
+/********************** Navigation *******************/
+.my-bg-dark
+{
+    background-color: #1D1A1A;
+}
+.navbar-nav .basket , .leftNavSection .basket{
+    position: relative;
+}
+.navbar-nav .basket .orderCounts , .leftNavSection .basket .orderCounts{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.navbar-nav .basket .fa-shopping-cart , .leftNavSection .basket .fa-shopping-cart{
+    font-size: 19px;
+}
+.leftNavSection a{
+    color: #333;
+    transition: 500ms;
+}
+.leftNavSection a:hover{
+    color: #444;
+}
+.leftNavSection .basket a{
+    transition: 500ms;
+}
+.leftNavSection .basket a:hover{
+    color: #444;
+}
+.navbar-nav .basket a , .leftNavSection .basket a{
+    color: #333;
+}
+nav .img-fluid{
+    width: 80px;
+}
+.dropdown .dropdown-menu{
+    transition: 500ms;
+    text-align: right;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.navbar-nav .dropdown-menu{
+    right: 0;
+    background-color: #848484;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        right: 0;
+        background-color: #848484;
+    }
+}
+
+/********************** Banner *******************/
+.banner-center{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url("../images/bg_images/back.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.banner-center img{
+    width: 400px;
+    margin: auto;
+}
+.banner-center input{
+    width: 50%;
+}
+
+/********************** Products Section *******************/
+#products .title h1{
+    font-weight: 500;
+}
+.productsImg{
+    min-height: 90vh;
+    background-color: #383737;
+}
+.imgBox{
+    background-color: #9B5104;
+    border-radius: 10px;
+    box-shadow:  0 6px 10px 0 rgba(24, 24, 24, 0.84);
+    transition: 500ms;
+}
+.imgBox:hover{
+    background-color: #FFBF2D;
+    box-shadow:  0 8px 12px 0 rgba(16, 16, 16, 0.93);
+}
+.imgBox img{
+    border-radius: 7px;
+    height: 180px;
+}
+.imgInfo .imgTitle{
+    font-size: 19px ;
+    color: #262626;
+}
+.imgPrice{
+    color: #262626;
+}
+.imgBox .addToBasket{
+    font-size: 23px;
+    color: #323232;
+    transition: 500ms;
+}
+.imgBox .addToBasket:hover{
+    background: #b17f0d;
+    box-shadow:  0 6px 12px 0 rgba(16, 16, 16, 0.93);
+}
+.pageBlock ul.pagination{
+    direction: ltr;
+}
+.page-link{
+    background-color: rgba(54, 52, 52, 0.8);
+    color: #e2e2e2;
+    border: none;
+    transition: 500ms;
+}
+.page-link:hover{
+    color: rgba(54, 52, 52, 0.8);
+    background-color: #848484;
+}
+.page-item.active .page-link{
+    color: rgba(54, 52, 52, 0.8);
+    background-color:  #FFBF2D;;
+    outline: none;
+    border: none;
+}
+.page-link:focus {
+    outline: 0;
+    box-shadow: none ;
+}
+.msg{
+    font-size:1.5rem;
+}
+
+/********************** Pay Content *******************/
+.paySection .payContent{
+    min-height: 90vh;
+}
+
+/********************** Basket Content *******************/
+.basketContent{
+    min-height: 90vh;
+    background-color: #2b2b2b;
+}
+.basketTable{
+    background-color: #898383;
+    border-radius: 10px;
+}
+.table th, .table td{
+    border: none;
+}
+.basketTable .img-fluid{
+    width: 50px;
+}
+.priceBox{
+    background-color: #c16605;
+    border-radius: 10px;
+}
+.payBtn{
+    background-color: #FFBF2D;
+    color: #eee;
+    border-radius: 10px;
+    transition: 500ms;
+}
+.payBtn:hover{
+    background-color: #b4810e;
+    color: #eee;
+}
+.basketTable .quantity{
+    width: 10%;
+    background-color: #e0dfdf;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+/********************** ContactUs Content *******************/
+hr{
+    width: 40%;
+    border-top: 4px dotted rgba(0, 0, 0, 0.5);
+}
+.contactUsContent{
+    min-height: 90vh ;
+    background-color: #323232;
+}
+.contactUsContent a {
+    color: #262626;
+    font-size: 18px;
+    transition: 500ms;
+}
+.contactUsContent a:hover {
+    color: #403f3f;
+}
+
+
+/********************** showPost Content *******************/
+.showPostContent , .showPostImage {
+    min-height: 90vh ;
+}
+.showPostContent{
+    background-color: #666;
+}
+.showPostImage{
+    background-color: #555;
+}
+.showPostContent p , .showPostContent h3{
+    color: #222;
+}
+.showPostImage img{
+    border-radius: 10px;
+    width: 300px;
+}
+.showPostContent .quantity{
+    width: 5%;
+    background-color: #e0dfdf;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+/********************** Footer *******************/
+.footer .img-fluid{
+    width: 80px;
+}
+.footer .firstCol p{
+    color: #aaaaaa;
+}
+.footer .firstCol .socialMedia a{
+    color: #FFBF2D;
+    font-size: 20px;
+    transition: 500ms;
+}
+.footer .firstCol .socialMedia a:hover{
+    color: #745401;
+}
+.footer h4{
+    color: #bbb;
+}
+.footer .secondCol .secondContent a {
+    color: #aaaaaa ;
+    transition: 500ms;
+}
+.footer .secondCol .secondContent a:hover {
+    color: #777 ;
+}
+.footer .secondCol .sendMessage{
+    background-color: #FFBF2D;
+    height: 45px;
+    line-height: 45px;
+    transition: 500ms;
+    border-radius: 7px;
+    display: inline-block;
+}
+.footer .secondCol .sendMessage:hover{
+    background-color: #9B5104;
+}
+.footer .secondCol .sendMessage a{
+    color: #403f3f;
+}
+.footer .thirdCol a , .footer .forthCol a {
+    color: #aaaaaa ;
+    transition: 500ms;
+}
+.footer .thirdCol a:hover , .footer .forthCol a:hover {
+    color: #777 ;
+}
+
+.copyRight
+{
+    background-color: #383737;
+}
+
+/********************** UserPanel *******************/
+.nav-tabs {
+    border-bottom: 2px solid #393838;
+}
+.panelContent{
+    min-height: 90vh;
+}
+.nav-tabs .nav-link{
+    color: #403f3f;
+}
+.nav-tabs .nav-link.active{
+    background-color: #bbb;
+    border: 2px solid #393838;
+}
+.nav-tabs .nav-link:hover{
+    border: 2px solid #393838;
+}
+.msg{
+    font-size:1.5rem
+}
+.panelTable{
+    background-color: #898383;
+    border-radius: 10px;
+}
+.table th, .table td{
+    border: none;
+}
+.panelTable .img-fluid{
+    width: 50px;
+}
+.panelTable .downloadBtn{
+    background-color: #744a79;
+    color: #333;
+    transition: 500ms;
+}
+.panelTable .downloadBtn:hover{
+    background-color: #3a283b;
+    color: #888;
+}
+
